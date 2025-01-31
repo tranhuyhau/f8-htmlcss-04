@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Poppins, sans-serif;
+    background: #fffaf6;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 28px);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.other-font {
+    font-family: Sora, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+
+    display: inline-block;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    min-width: 117px;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+/* Header */
+.header {
+    padding-top: 26px;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-link,
+.header__action--sign-in {
+    padding: 8px 18px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.header__nav-link:hover {
+    color: #000958;
+    text-shadow: 1px 0 #000958;
+}
+
+.header__nav-active {
+    color: #000958;
+    text-shadow: 1px 0 #000958;
+}
+
+.header__action--sign-up {
+    --height: 50px;
+
+    color: #000958;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-color: rgb(0, 9, 88, 0.7);
+}
+
+/* Hero */
+.hero {
+    padding-top: 100px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 120px;
+}
+
+.hero__media {
+    display: flex;
+    position: relative;
+    padding-bottom: 94px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    background: #fe997b;
+}
+
+.hero__img {
+    max-width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.hero__img-decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__img-decor:nth-child(2) {
+    right: -42px;
+    top: 16px;
+}
+
+.hero__img-decor:last-child {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__img-wrap--small {
+    margin: 0 0 -58px -23px;
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    background: #faa7ad;
+    border-color: #ffdfdf;
+}
+
+.hero__list {
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    padding: 18px 14px;
+    width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__item {
+    display: flex;
+}
+
+.hero__item:last-child .hero__item-img {
+    background: #c6e2fa;
+}
+
+.hero__item-img {
+    background: #fec23f;
+    border-radius: 10px;
+}
+
+.hero__item-info {
+    margin-left: 10px;
+}
+
+.hero__item-title {
+    color: #181e52;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__item-skeleton {
+    width: 118px;
+    margin-top: 6px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(0, 9, 88, 0.08);
+}
+
+.hero__item-skeleton + .hero__item-skeleton {
+    width: 39px;
+}
+
+.hero__list-separate {
+    margin: 20px 0;
+    height: 2px;
+    border-radius: 1px;
+    background: #f2f2f2;
+}
+
+.hero__heading {
+    color: #000958;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero__desc {
+    margin: 24px 0 38px;
+    width: 415px;
+    color: #656689;
+    font-size: 1.6rem;
+    line-height: 1.875;
+}
+
+.hero__cta {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.hero__cta-btn {
+    --height: 60px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    min-width: 189px;
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.hero__cta-arrow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fffaf5;
+}
+
+.hero__cta-link {
+    color: #000958;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: underline;
+}
