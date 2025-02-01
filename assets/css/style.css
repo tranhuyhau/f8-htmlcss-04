@@ -549,3 +549,110 @@ img {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
+/* Service */
+.service {
+    margin-top: 77px;
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__body {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.service__item {
+    padding: 30px 22px 30px 28px;
+    width: 294px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+
+.service__item + .service__item {
+    margin-top: 24px;
+}
+
+.service__item-heading {
+    padding-left: 12px;
+    position: relative;
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.service__item-heading::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(to bottom, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+
+.service__item-desc {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.714;
+}
+
+.service__item-more {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: 24px;
+    color: #34396a;
+    font-family: Sora;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.service__item-more::after {
+    content: url(../icon/arrow-up-right.svg);
+    margin-top: 1px;
+}
+
+.service__img-wrap {
+    position: relative;
+    justify-self: center;
+    margin-top: 17px;
+    width: 447px;
+}
+
+.service__img-wrap::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.service__btn-wrap {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.service__btn {
+    min-width: 214px;
+}
